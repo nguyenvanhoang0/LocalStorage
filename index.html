@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quản lý thông tin sinh viên</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form method="post" onsubmit="return saveData();">
+	<div class="s1">
+        <div class="t1">Dăng kí tài khoản User</div>
+            <div class="a1">
+		        <div class="b1" >
+		        	<label>User Name:</label>
+		        	<input required type="text" name="User_Name" id="c1_id">
+		        </div>
+		        <div class="b1">
+		        	<label>Full Name:</label>
+		        	<input required type="text" name="Full_Name" id="c2_id">
+		        </div>
+		        <div class="b1">
+		        	<label>Email:</label>
+		        	<input required type="email" name="email" id="c3_id">
+		        </div>
+		        <div class="b1">
+		        	<label>birhday:</label>
+		            <input required type="date" name="birhday" id="c4_id">
+		        </div>
+		    </div>   
+		    <div class="a2">
+	        	<button type="submit" class="c5">Save</button>
+	        	<button type="Reset" class="c6">Reset</button>
+	        </div>
+	</div>
+	
+	<div class="s2">
+		<div>
+				<table border="1" cellspacing="5">
+					<thead>
+						<tr>
+							<td>No</td>
+							<td>User Name</td>
+							<td>Full Name</td>
+							<td>Email</td>
+							<td>birhday</td>
+							<td></td>
+							<td></td>
+
+						</tr>
+					</thead>
+					<tbody id="result"></tbody>
+				</table>
+		</div>		
+	</div>
+	<script type="text/javascript" src="style.js"></script>
+    </form>
+
+</body>
+</html>
